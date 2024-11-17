@@ -47,7 +47,16 @@ jobs:
 
           # Optional: Whether to include a table of contents
           table_of_contents: true
-      - uses: actions/upload-artifact@v3
+
+      - name: Upload PDF as artifact
+        uses: actions/upload-artifact@v3
         with:
           name: Theoretical-Computer-Science
-          path: pdf
+          path: ./pdf
+      - name: Commit generated PDF to repository
+        run: |
+          git config --global user.name "umbertocicciaa"
+          git config --global user.email "umbertociccia@icloud.com"
+          git add ./pdf
+          git commit -m "Add generated PDFs"
+          git push
