@@ -1,0 +1,49 @@
+name: Markdown to PDF and HTML Conversion
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  my_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        
+      - name: Convert Markdown to PDF and HTML
+        uses: BaileyJM02/markdown-to-pdf@1be26775add5f94fb55d4a2ce36ff7cad23b8dd0
+        with:
+          # Specify the input directory or file path for markdown files
+          input_path: ./docs/README.md  # Example for a single file
+          # OR specify a folder containing multiple markdown files
+          # input_dir: ./docs
+
+          # Optional: Specify a directory for images used in markdown files
+          images_dir: ./docs/images
+
+          # Optional: Output directory for the generated files
+          output_dir: ./build
+
+          # Optional: Set to true to build an HTML version of the markdown
+          build_html: false
+
+          # Optional: Set to true to build a PDF version
+          build_pdf: true
+
+          # Optional: Path to a custom CSS file for styling
+          theme: ./themes/custom-theme.css
+
+          # Optional: Whether to extend the default theme with custom CSS
+          extend_default_theme: true
+
+          # Optional: Path to a custom CSS file for code block highlighting
+          highlight_theme: ./themes/highlight-theme.css
+
+          # Optional: Path to an HTML template file
+          template: ./templates/custom-template.html
+
+          # Optional: Whether to include a table of contents
+          table_of_contents: true
