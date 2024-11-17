@@ -1,12 +1,11 @@
 # Theoretical-Computer-Science
 
-- [Table of contents](#table-of-contents)
-  * [Grammars](#grammars)
-  * [Languages](#languages)
+## Table of Contents
+- [Grammars](#grammars)
+- [Languages](#languages)
 
-# Grammars
-Content about grammars...
+## Grammars
+This section covers the fundamentals of grammars, including context-free, context-sensitive, and regular grammars.
 
-# Languages
-Content about languages...
-
+## Languages
+This section discusses formal languages, their classifications, and their relationships with automata.
