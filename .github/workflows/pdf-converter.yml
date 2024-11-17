@@ -22,10 +22,10 @@ jobs:
           # input_dir: ./docs
 
           # Optional: Specify a directory for images used in markdown files
-          images_dir: ./docs/images
+          #images_dir: ./docs/images
 
           # Optional: Output directory for the generated files
-          output_dir: ./build
+          output_dir: ./pdf
 
           # Optional: Set to true to build an HTML version of the markdown
           build_html: false
@@ -37,13 +37,13 @@ jobs:
           theme: ./themes/custom-theme.css
 
           # Optional: Whether to extend the default theme with custom CSS
-          extend_default_theme: true
+          #extend_default_theme: true
 
           # Optional: Path to a custom CSS file for code block highlighting
-          highlight_theme: ./themes/highlight-theme.css
+          #highlight_theme: ./themes/highlight-theme.css
 
           # Optional: Path to an HTML template file
-          template: ./templates/custom-template.html
+          #template: ./templates/custom-template.html
 
           # Optional: Whether to include a table of contents
           table_of_contents: true
