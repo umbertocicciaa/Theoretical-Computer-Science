@@ -25,18 +25,16 @@ jobs:
           build_html: false
           table_of_contents: false
           
-      - name: Pull the latest changes from the remote repository
-        run: |
-          git pull origin main 
-          
       - name: Commit generated PDF to repository
         run: |
+          git pull origin main
           git config --global user.name "GitHub Actions"
           git config --global user.email "github-actions@github.com"
+          mv pdfREADME.pdf ./pdf/ || true
           git add ./pdf/*
-          git commit -m "Add generated PDFs"
+          git commit -m "Add generated PDFs" || echo "Nothing to commit"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/umbertocicciaa/Theoretical-Computer-Science.git
-
+          
       - name: Upload PDF as artifact
         uses: actions/upload-artifact@v3
         with:
