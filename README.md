@@ -4,8 +4,13 @@ This repository contains basic notes about Theoretical-Computer-Science course o
 ## Table of Contents
 - [Languages](#languages)
 - [Grammars](#grammars)
-  + [Chomsky hierarchy](#chomsky-hierarchy)
-
+  * [Chomsky hierarchy](#chomsky-hierarchy)
+- [Regular languages](#regular-languages)
+  * [Deterministic finite state automata](#deterministic-finite-state-automata)
+  * [Non deterministic finite state automata](#non-deterministic-finite-state-automata)
+  * [Regular expression](#regular-expression)
+  * [Proprieties of regular languages](#proprieties-of-regular-languages)
+  * [Pumping lemma for regular languages](#pumping-lemma-for-regular-languages)
 ## Languages
 What is a language? It is simple. A set of strings. Now the question is obvious. What are strings? Strings are a sequence of simbol of an alphabet. Mathematically we denote with this simbol $\Sigma$ an alphabet, and with $\Sigma^*$ all the strings from the alphabet. </br>
 
