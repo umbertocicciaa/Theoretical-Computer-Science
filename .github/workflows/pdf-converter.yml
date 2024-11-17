@@ -22,7 +22,8 @@ jobs:
           input_path: ./README.md
           output_dir: ./pdf
           build_pdf: true
-          table_of_contents: true
+          build_html: false
+          table_of_contents: false
           
       - name: Commit generated PDF to repository
         run: |
