@@ -26,6 +26,11 @@ $`\alpha , \gamma , \beta \in (V \cup T )^*`$, With $(V \cup T )^*$ we identify 
 
 ### Chomsky hierarchy
 
+We can divide grammars in 4 types base on the language they generate:
+- Type 3 grammar: grammar production are of the type, $`A => a`$ &nbsp;  $`A \in V,\ a \in T `$ &nbsp; $`A => Ba, A,B \in V, a \in T`$ &nbsp; $`A => aB, A,B \in V, a \in T`$
+- Type 2 grammar: grammar production are of the type, $`A => \Gamma `$ &nbsp;  $`A \in V, \Gamma \in (V \cup T)^*`$
+- Type 0 grammar: grammar production are of the type, $`\alpha A \beta => \alpha \gamma \beta`$ &nbsp; $`A \in V`$, &nbsp; $`\alpha , \gamma , \beta \in (V \cup T )^*`$
+  
 ## Regular languages
 ### Type 3 grammars
 ### Deterministic finite state automata
