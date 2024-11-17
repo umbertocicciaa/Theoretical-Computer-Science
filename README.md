@@ -1,5 +1,5 @@
 # Theoretical-Computer-Science
-This repository contains basic notes about Theoretical-Computer-Science course of Università Della Calabria. You can use this repo for review but not for study as proofs of the theorems are missing
+This repository contains basic notes about Theoretical-Computer-Science course of Università Della Calabria. You can use this repo for review but not for study as proofs of the theorems are missing. If you like share and star the repository :)
 
 ## Table of Contents
 - [Languages](#languages)
