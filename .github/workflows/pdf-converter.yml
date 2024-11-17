@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v2
         
       - name: Convert Markdown to PDF and HTML
-        uses: BaileyJM02/markdown-to-pdf@1be26775add5f94fb55d4a2ce36ff7cad23b8dd0
+        uses: BaileyJM02/markdown-to-pdf@1.2.0
         with:
           input_path: ./README.md
           output_dir: ./pdf
