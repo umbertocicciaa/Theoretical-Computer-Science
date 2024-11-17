@@ -55,8 +55,8 @@ jobs:
           path: ./pdf
       - name: Commit generated PDF to repository
         run: |
-          git config --global user.name "umbertocicciaa"
-          git config --global user.email "umbertociccia@icloud.com"
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "github-actions@github.com"
           git add ./pdf
           git commit -m "Add generated PDFs"
-          git push
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/umbertocicciaa/Theoretical-Computer-Science.git
