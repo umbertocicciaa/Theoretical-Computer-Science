@@ -34,7 +34,7 @@ jobs:
           build_pdf: true
 
           # Optional: Path to a custom CSS file for styling
-          theme: ./themes/custom-theme.css
+          #theme: ./themes/custom-theme.css
 
           # Optional: Whether to extend the default theme with custom CSS
           #extend_default_theme: true
