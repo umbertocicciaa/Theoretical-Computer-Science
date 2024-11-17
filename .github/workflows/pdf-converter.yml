@@ -24,9 +24,11 @@ jobs:
           build_pdf: true
           build_html: false
           table_of_contents: false
+          
       - name: Pull the latest changes from the remote repository
         run: |
           git pull origin main 
+          
       - name: Commit generated PDF to repository
         run: |
           git config --global user.name "GitHub Actions"
