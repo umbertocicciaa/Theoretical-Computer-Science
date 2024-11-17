@@ -24,12 +24,14 @@ jobs:
           build_pdf: true
           build_html: false
           table_of_contents: false
-          
+      - name: Pull the latest changes from the remote repository
+        run: |
+          git pull origin main 
       - name: Commit generated PDF to repository
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "github-actions@github.com"
-          git add ./pdf
+          git add ./pdf/*
           git commit -m "Add generated PDFs"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/umbertocicciaa/Theoretical-Computer-Science.git
 
